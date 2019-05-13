@@ -25,7 +25,6 @@ for t=1:num_hyp_edges
     
     if strcmp(distance_func,'gAlign')
         Aligns = X{2};
-        Aligns_1 = X{3};
     else if strcmp(distance_func,'rrwm')
             Aligns = X{1};
         else if strcmp(distance_func,'mOpt')
@@ -40,8 +39,7 @@ for t=1:num_hyp_edges
     hyper_edges(t,4) = compute_distance_from_alignment(Aligns, all_graphs,graphs_in_hyper_edge, nodes);
     
     if strcmp(distance_func,'gAlign')
-        hyper_edges(t,5) = compute_distance_from_alignment(Aligns_1, all_graphs,graphs_in_hyper_edge, nodes);
-        hyper_edges(t,6) = g_align_score; %g_align unrounded score
+        hyper_edges(t,5) = g_align_score; %g_align unrounded score
     end
     
 end
