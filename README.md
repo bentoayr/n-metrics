@@ -1,3 +1,3 @@
-This repository is to support the ICML 2019 paper ``Tractable n-Metrics for Multiple Graphs''
+This repository is to support the paper ``Tractable n-Metrics for Multiple Graphs''
 
-It is still under construction....
+
